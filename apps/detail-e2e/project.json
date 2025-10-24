@@ -1,0 +1,10 @@
+{
+  "name": "detail-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/detail-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["detail"],
+  "// targets": "to see all targets run: nx show project detail-e2e --web",
+  "targets": {}
+}

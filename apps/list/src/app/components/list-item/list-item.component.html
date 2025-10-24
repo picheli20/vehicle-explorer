@@ -1,0 +1,8 @@
+<mat-card appearance="outlined" data-testid="list-item">
+  <mat-card-header class="header-flex">
+    <mat-card-title>{{ item()?.Make_Name }}</mat-card-title>
+    <button mat-icon-button color="primary" [routerLink]="['/detail', item()?.Make_ID]">
+      <mat-icon fontIcon="arrow_forward"></mat-icon>
+    </button>
+  </mat-card-header>
+</mat-card>

@@ -1,0 +1,9 @@
+{
+  "Count": 1,
+  "Message": "Response returned successfully",
+  "SearchCriteria": "Make ID: 12858",
+  "Results": [{
+    "VehicleTypeId": 6,
+    "VehicleTypeName": "Trailer"
+  }]
+}

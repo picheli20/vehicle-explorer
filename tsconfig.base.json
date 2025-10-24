@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "detail/Routes": ["apps/detail/src/app/remote-entry/entry.routes.ts"],
+      "list/Routes": ["apps/list/src/app/remote-entry/entry.routes.ts"],
+      "@vehicle-explorer/vehicle": ["libs/vehicle/src/index.ts"],
+      "@vehicle-explorer/data": ["libs/data/src/index.ts"],
+      "@vehicle-explorer/page": ["libs/page/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

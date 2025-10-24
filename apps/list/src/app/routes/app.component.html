@@ -1,0 +1,6 @@
+<cdk-virtual-scroll-viewport [itemSize]="80">
+  <app-search></app-search>
+  @for (item of (makers$ | async); track item.Make_ID) {
+    <app-list-item [item]="item"></app-list-item>
+  }
+</cdk-virtual-scroll-viewport>

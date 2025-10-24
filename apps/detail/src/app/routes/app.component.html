@@ -1,0 +1,11 @@
+<button matFab extended [routerLink]="['/list']">
+  <mat-icon fontIcon="arrow_back"></mat-icon> Back
+</button>
+<h1>Vehicles types</h1>
+@for (type of details()?.types; track type.VehicleTypeId) {
+  <app-vehicle-type-item [label]="type.VehicleTypeName"></app-vehicle-type-item>
+}
+<h1>Vehicles Models</h1>
+@for (model of details()?.models; track model.Model_ID) {
+  <app-vehicle-model-item [label]="model.Model_Name"></app-vehicle-model-item>
+}

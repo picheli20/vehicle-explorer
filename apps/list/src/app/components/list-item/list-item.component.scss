@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+.header-flex {
+  display: flex !important; // Need to override Material styles
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
