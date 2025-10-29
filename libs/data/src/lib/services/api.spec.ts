@@ -7,7 +7,7 @@ import { ApiService } from './api.service';
 describe('ApiService', () => {
   let service: ApiService;
   let http: HttpClient;
-  const mockEnv: Environment = { apiUrl: 'http://fakeapi.com' } as any;
+  const mockEnv: Environment = { apiUrl: 'http://fakeapi.com' };
 
   beforeEach(() => {
     const httpMock = { get: jest.fn() };
@@ -83,10 +83,9 @@ describe('ApiService', () => {
       const result = await firstValueFrom(service.getDetails(1));
       expect(result).toEqual({ makeId: 1, types: types.Results, models: models.Results });
 
-      // call again should return cached value without new HTTP calls
       const cached = await firstValueFrom(service.getDetails(1));
       expect(cached).toEqual({ makeId: 1, types: types.Results, models: models.Results });
-      expect(http.get).toHaveBeenCalledTimes(3); // only original calls
+      expect(http.get).toHaveBeenCalledTimes(2);
     });
   });
 });
